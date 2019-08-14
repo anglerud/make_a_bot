@@ -45,12 +45,12 @@ void loop() {
   steering = left_right_joystick_val;
   left_motor_speed = constrain(forward_back_joystick_val + steering, -1.0, 1.0);
   right_motor_speed = constrain(forward_back_joystick_val - steering, -1.0, 1.0);
-  Serial.print("Left motor speed: ");
-  Serial.print(left_motor_speed);
-  Serial.print("    ");
-  Serial.print("Right motor speed: ");
-  Serial.print(right_motor_speed);
-  Serial.println("");
+  // Serial.print("Left motor speed: ");
+  // Serial.print(left_motor_speed);
+  // Serial.print("    ");
+  // Serial.print("Right motor speed: ");
+  // Serial.print(right_motor_speed);
+  // Serial.println("");
   
   // Start your motor running
   set_motor_speed(motor_left_pin_A, motor_left_pin_B, left_motor_speed);
